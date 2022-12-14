@@ -136,7 +136,7 @@ const Sidebar = () => {
             </Typography>
 
             <Item
-              title="Mange Team"
+              title="Manage Team"
               to="/team"
               icon={<PeopleOutlinedIcon />}
               selected={selected}
@@ -167,7 +167,7 @@ const Sidebar = () => {
 
             <Item
               title="Profile Form"
-              to="/from"
+              to="/form"
               icon={<PersonOutlinedIcon />}
               selected={selected}
               setSelected={setSelected}
