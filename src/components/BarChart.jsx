@@ -1,11 +1,11 @@
-import { useTheme } from "@mui/material";
 import { ResponsiveBar } from "@nivo/bar";
+import { useTheme } from "@mui/material";
 import { tokens } from "../theme";
 import { mockBarData as data } from "../data/mockData";
 
 const BarChart = ({ isDashboard = false }) => {
   const theme = useTheme();
-  const colors = tokens(theme.palette.mode);
+  const colors = tokens(theme.palette.mode); //When in dark mode, the text is set to white = can't see the text.. how to change?
 
   return (
     <ResponsiveBar
@@ -36,6 +36,11 @@ const BarChart = ({ isDashboard = false }) => {
         legends: {
           text: {
             fill: colors.grey[100],
+          },
+        },
+        tooltip: {
+          container: {
+            color: colors.primary[500],
           },
         },
       }}
