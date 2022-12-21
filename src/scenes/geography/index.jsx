@@ -6,7 +6,7 @@ import { useTheme } from "@mui/material";
 
 const Geography = () => {
   const theme = useTheme();
-  const colors = tokens(theme.palette.mode); //When in dark mode, the text is set to white = can't see the text.. how to change?
+  const colors = tokens(theme.palette.mode);
 
   return (
     <Box m="20px">
